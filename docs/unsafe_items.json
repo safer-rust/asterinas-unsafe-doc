@@ -69,7 +69,7 @@
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 93,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L93",
-    "tags": "Valid, CanFail"
+    "tags": "Valid, CanFail, UserSpace"
   },
   {
     "index": 7,
@@ -93,7 +93,7 @@
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 109,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L109",
-    "tags": "Valid, CanFail"
+    "tags": "Valid, CanFail, UserSpace"
   },
   {
     "index": 9,
@@ -345,7 +345,7 @@
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 93,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L93",
-    "tags": "Valid, CanFail"
+    "tags": "Valid, CanFail, UserSpace"
   },
   {
     "index": 30,
@@ -369,7 +369,7 @@
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 109,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L109",
-    "tags": "Valid, CanFail"
+    "tags": "Valid, CanFail, UserSpace"
   },
   {
     "index": 32,
@@ -645,7 +645,7 @@
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 62,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L62",
-    "tags": "Valid, CanFail"
+    "tags": "Valid, CanFail, UserSpace"
   },
   {
     "index": 55,
@@ -669,7 +669,7 @@
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 83,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L83",
-    "tags": "Valid, CanFail"
+    "tags": "Valid, CanFail, UserSpace"
   },
   {
     "index": 57,
@@ -705,7 +705,7 @@
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 178,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L178",
-    "tags": "Valid, CanFail"
+    "tags": "Valid, CanFail, UserSpace"
   },
   {
     "index": 60,
@@ -729,7 +729,7 @@
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 199,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L199",
-    "tags": "Valid, CanFail"
+    "tags": "Valid, CanFail, UserSpace"
   },
   {
     "index": 62,
@@ -1305,7 +1305,7 @@
     "source_path": "ostd/src/mm/frame/mod.rs",
     "source_line": 206,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/mod.rs#L206",
-    "tags": "OriginateFrom"
+    "tags": "OriginateFrom, Forgotten"
   },
   {
     "index": 110,
@@ -1389,7 +1389,7 @@
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 333,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L333",
-    "tags": "Owning"
+    "tags": "Owning, XorAccess"
   },
   {
     "index": 117,
@@ -1413,7 +1413,7 @@
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 365,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L365",
-    "tags": "Owning"
+    "tags": "Owning, XorAccess"
   },
   {
     "index": 119,
@@ -1437,7 +1437,7 @@
     "source_path": "ostd/src/mm/frame/segment.rs",
     "source_line": 117,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/segment.rs#L117",
-    "tags": ""
+    "tags": "Forgotten"
   },
   {
     "index": 121,
@@ -1449,7 +1449,7 @@
     "source_path": "ostd/src/mm/frame/unique.rs",
     "source_line": 131,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/unique.rs#L131",
-    "tags": ""
+    "tags": "Forgotten"
   },
   {
     "index": 122,
@@ -1497,7 +1497,7 @@
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 501,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L501",
-    "tags": ""
+    "tags": "UserSpace"
   },
   {
     "index": 126,
@@ -1509,7 +1509,7 @@
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 779,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L779",
-    "tags": "Assoc"
+    "tags": "Assoc, UserSpace"
   },
   {
     "index": 127,
@@ -1677,7 +1677,7 @@
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 70,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L70",
-    "tags": ""
+    "tags": "Forgotten"
   },
   {
     "index": 141,
@@ -1701,7 +1701,7 @@
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 146,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L146",
-    "tags": "ValidNum"
+    "tags": "ValidNum, Forgotten"
   },
   {
     "index": 143,
@@ -1797,7 +1797,7 @@
     "source_path": "ostd/src/mm/page_table/cursor/locking.rs",
     "source_line": 257,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/locking.rs#L257",
-    "tags": ""
+    "tags": "UserSpace, Forgotten"
   },
   {
     "index": 151,
@@ -1833,7 +1833,7 @@
     "source_path": "ostd/src/mm/page_table/node/mod.rs",
     "source_line": 160,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L160",
-    "tags": "InBound, LockHold"
+    "tags": "InBound, LockHold, Forgotten"
   },
   {
     "index": 154,
@@ -1965,7 +1965,7 @@
     "source_path": "ostd/src/sync/rcu/non_null/mod.rs",
     "source_line": 60,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/non_null/mod.rs#L60",
-    "tags": "Alias, NonAccessable, OriginateFrom"
+    "tags": "Alias, NonAccessable, OriginateFrom, Forgotten"
   },
   {
     "index": 165,
