@@ -57,7 +57,7 @@
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 57,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L57",
-    "tags": "Valid, ValidWrite"
+    "tags": "ValidWrite, Valid"
   },
   {
     "index": 6,
@@ -69,7 +69,7 @@
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 93,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L93",
-    "tags": "Valid"
+    "tags": "Valid, CanFail"
   },
   {
     "index": 7,
@@ -81,7 +81,7 @@
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 75,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L75",
-    "tags": "Valid, ValidRead"
+    "tags": "ValidRead, Valid"
   },
   {
     "index": 8,
@@ -93,7 +93,7 @@
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 109,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L109",
-    "tags": "Valid"
+    "tags": "Valid, CanFail"
   },
   {
     "index": 9,
@@ -117,7 +117,7 @@
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 28,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L28",
-    "tags": ""
+    "tags": "NonVolatile"
   },
   {
     "index": 11,
@@ -129,7 +129,7 @@
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 44,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L44",
-    "tags": ""
+    "tags": "NonVolatile"
   },
   {
     "index": 12,
@@ -141,7 +141,7 @@
     "source_path": "ostd/src/arch/loongarch/iommu/mod.rs",
     "source_line": 18,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/iommu/mod.rs#L18",
-    "tags": ""
+    "tags": "MayInvalid"
   },
   {
     "index": 13,
@@ -201,7 +201,7 @@
     "source_path": "ostd/src/arch/loongarch/mm/mod.rs",
     "source_line": 129,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L129",
-    "tags": ""
+    "tags": "Valid"
   },
   {
     "index": 18,
@@ -213,7 +213,7 @@
     "source_path": "ostd/src/arch/loongarch/mm/mod.rs",
     "source_line": 116,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L116",
-    "tags": ""
+    "tags": "Valid, FlagSet"
   },
   {
     "index": 19,
@@ -261,7 +261,7 @@
     "source_path": "ostd/src/arch/loongarch/trap/mod.rs",
     "source_line": 31,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/trap/mod.rs#L31",
-    "tags": "CallOnce"
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 23,
@@ -273,7 +273,7 @@
     "source_path": "ostd/src/arch/loongarch/trap/trap.rs",
     "source_line": 16,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/trap/trap.rs#L16",
-    "tags": "CallOnce"
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 24,
@@ -309,7 +309,7 @@
     "source_path": "ostd/src/arch/riscv/boot/smp.rs",
     "source_line": 39,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/boot/smp.rs#L39",
-    "tags": ""
+    "tags": "CallOnce"
   },
   {
     "index": 27,
@@ -333,7 +333,7 @@
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 57,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L57",
-    "tags": "Valid, ValidWrite"
+    "tags": "ValidWrite, Valid"
   },
   {
     "index": 29,
@@ -345,7 +345,7 @@
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 93,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L93",
-    "tags": "Valid"
+    "tags": "Valid, CanFail"
   },
   {
     "index": 30,
@@ -357,7 +357,7 @@
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 75,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L75",
-    "tags": "Valid, ValidRead"
+    "tags": "ValidRead, Valid"
   },
   {
     "index": 31,
@@ -369,7 +369,7 @@
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 109,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L109",
-    "tags": "Valid"
+    "tags": "Valid, CanFail"
   },
   {
     "index": 32,
@@ -393,7 +393,7 @@
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 28,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L28",
-    "tags": ""
+    "tags": "NonVolatile"
   },
   {
     "index": 34,
@@ -405,7 +405,7 @@
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 44,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L44",
-    "tags": ""
+    "tags": "NonVolatile"
   },
   {
     "index": 35,
@@ -417,7 +417,7 @@
     "source_path": "ostd/src/arch/riscv/iommu/mod.rs",
     "source_line": 18,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/iommu/mod.rs#L18",
-    "tags": ""
+    "tags": "MayInvalid"
   },
   {
     "index": 36,
@@ -453,7 +453,7 @@
     "source_path": "ostd/src/arch/riscv/irq/ipi.rs",
     "source_line": 46,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/ipi.rs#L46",
-    "tags": ""
+    "tags": "PostToFunc"
   },
   {
     "index": 39,
@@ -465,7 +465,7 @@
     "source_path": "ostd/src/arch/riscv/irq/ipi.rs",
     "source_line": 28,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/ipi.rs#L28",
-    "tags": ""
+    "tags": "PostToFunc"
   },
   {
     "index": 40,
@@ -477,7 +477,7 @@
     "source_path": "ostd/src/arch/riscv/mm/mod.rs",
     "source_line": 163,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mm/mod.rs#L163",
-    "tags": ""
+    "tags": "Valid"
   },
   {
     "index": 41,
@@ -489,7 +489,7 @@
     "source_path": "ostd/src/arch/riscv/mm/mod.rs",
     "source_line": 116,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mm/mod.rs#L116",
-    "tags": ""
+    "tags": "Valid, FlagSet"
   },
   {
     "index": 42,
@@ -537,7 +537,7 @@
     "source_path": "ostd/src/arch/riscv/timer/mod.rs",
     "source_line": 72,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/timer/mod.rs#L72",
-    "tags": ""
+    "tags": "CallOnce"
   },
   {
     "index": 46,
@@ -561,7 +561,7 @@
     "source_path": "ostd/src/arch/riscv/trap/mod.rs",
     "source_line": 35,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/trap/mod.rs#L35",
-    "tags": "CallOnce"
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 48,
@@ -573,7 +573,7 @@
     "source_path": "ostd/src/arch/riscv/trap/trap.rs",
     "source_line": 50,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/trap/trap.rs#L50",
-    "tags": "CallOnce"
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 49,
@@ -609,7 +609,7 @@
     "source_path": "ostd/src/arch/x86/boot/smp.rs",
     "source_line": 117,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/boot/smp.rs#L117",
-    "tags": ""
+    "tags": "CallOnce"
   },
   {
     "index": 52,
@@ -633,7 +633,7 @@
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 18,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L18",
-    "tags": "Valid, ValidWrite"
+    "tags": "ValidWrite, Valid"
   },
   {
     "index": 54,
@@ -645,7 +645,7 @@
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 62,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L62",
-    "tags": "Valid"
+    "tags": "Valid, CanFail"
   },
   {
     "index": 55,
@@ -657,7 +657,7 @@
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 40,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L40",
-    "tags": "Valid, ValidRead"
+    "tags": "ValidRead, Valid"
   },
   {
     "index": 56,
@@ -669,7 +669,7 @@
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 83,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L83",
-    "tags": "Valid"
+    "tags": "Valid, CanFail"
   },
   {
     "index": 57,
@@ -693,7 +693,7 @@
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 148,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L148",
-    "tags": "Valid, ValidWrite"
+    "tags": "ValidWrite, Valid"
   },
   {
     "index": 59,
@@ -705,7 +705,7 @@
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 178,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L178",
-    "tags": "Valid"
+    "tags": "Valid, CanFail"
   },
   {
     "index": 60,
@@ -717,7 +717,7 @@
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 163,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L163",
-    "tags": "Valid, ValidRead"
+    "tags": "ValidRead, Valid"
   },
   {
     "index": 61,
@@ -729,7 +729,7 @@
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 199,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L199",
-    "tags": "Valid"
+    "tags": "Valid, CanFail"
   },
   {
     "index": 62,
@@ -753,7 +753,7 @@
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 30,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L30",
-    "tags": ""
+    "tags": "NonVolatile"
   },
   {
     "index": 64,
@@ -765,7 +765,7 @@
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 73,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L73",
-    "tags": ""
+    "tags": "NonVolatile"
   },
   {
     "index": 65,
@@ -777,7 +777,7 @@
     "source_path": "ostd/src/arch/x86/iommu/dma_remapping/mod.rs",
     "source_line": 84,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/iommu/dma_remapping/mod.rs#L84",
-    "tags": ""
+    "tags": "Typed"
   },
   {
     "index": 66,
@@ -873,7 +873,7 @@
     "source_path": "ostd/src/arch/x86/kernel/apic/xapic.rs",
     "source_line": 143,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/kernel/apic/xapic.rs#L143",
-    "tags": ""
+    "tags": "FlagSet"
   },
   {
     "index": 74,
@@ -885,7 +885,7 @@
     "source_path": "ostd/src/arch/x86/mm/mod.rs",
     "source_line": 144,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mm/mod.rs#L144",
-    "tags": ""
+    "tags": "Valid"
   },
   {
     "index": 75,
@@ -897,7 +897,7 @@
     "source_path": "ostd/src/arch/x86/mm/mod.rs",
     "source_line": 130,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mm/mod.rs#L130",
-    "tags": ""
+    "tags": "Valid, FlagSet"
   },
   {
     "index": 76,
@@ -945,7 +945,7 @@
     "source_path": "ostd/src/arch/x86/tdx_guest.rs",
     "source_line": 48,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/tdx_guest.rs#L48",
-    "tags": "Align, InBound"
+    "tags": "Align, InBound, Typed"
   },
   {
     "index": 80,
@@ -957,7 +957,7 @@
     "source_path": "ostd/src/arch/x86/tdx_guest.rs",
     "source_line": 26,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/tdx_guest.rs#L26",
-    "tags": "Align, InBound"
+    "tags": "Align, InBound, Typed"
   },
   {
     "index": 81,
@@ -969,7 +969,7 @@
     "source_path": "ostd/src/arch/x86/trap/mod.rs",
     "source_line": 123,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/trap/mod.rs#L123",
-    "tags": "CallOnce"
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 82,
@@ -981,7 +981,7 @@
     "source_path": "ostd/src/arch/x86/trap/gdt.rs",
     "source_line": 33,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/trap/gdt.rs#L33",
-    "tags": ""
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 83,
@@ -1017,7 +1017,7 @@
     "source_path": "ostd/src/boot/smp.rs",
     "source_line": 72,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/boot/smp.rs#L72",
-    "tags": "Allocated"
+    "tags": "Allocated, Init, CallOnce"
   },
   {
     "index": 86,
@@ -1029,7 +1029,7 @@
     "source_path": "ostd/src/cpu/mod.rs",
     "source_line": 52,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/mod.rs#L52",
-    "tags": ""
+    "tags": "CallOnce"
   },
   {
     "index": 87,
@@ -1041,7 +1041,7 @@
     "source_path": "ostd/src/cpu/mod.rs",
     "source_line": 28,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/mod.rs#L28",
-    "tags": ""
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 88,
@@ -1053,7 +1053,7 @@
     "source_path": "ostd/src/cpu/id.rs",
     "source_line": 238,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L238",
-    "tags": ""
+    "tags": "CallOnce, PostToFunc, CurThread"
   },
   {
     "index": 89,
@@ -1065,7 +1065,7 @@
     "source_path": "ostd/src/cpu/id.rs",
     "source_line": 193,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L193",
-    "tags": ""
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 90,
@@ -1077,7 +1077,7 @@
     "source_path": "ostd/src/cpu/id.rs",
     "source_line": 165,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L165",
-    "tags": ""
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 91,
@@ -1089,7 +1089,7 @@
     "source_path": "ostd/src/cpu/id.rs",
     "source_line": 126,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L126",
-    "tags": ""
+    "tags": "CurThread"
   },
   {
     "index": 92,
@@ -1101,7 +1101,7 @@
     "source_path": "ostd/src/cpu/local/mod.rs",
     "source_line": 201,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/local/mod.rs#L201",
-    "tags": ""
+    "tags": "CallOnce, PostToFunc, CurThread"
   },
   {
     "index": 93,
@@ -1113,7 +1113,7 @@
     "source_path": "ostd/src/cpu/local/mod.rs",
     "source_line": 85,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/local/mod.rs#L85",
-    "tags": ""
+    "tags": "CurThread"
   },
   {
     "index": 94,
@@ -1125,7 +1125,7 @@
     "source_path": "ostd/src/io/mod.rs",
     "source_line": 39,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/mod.rs#L39",
-    "tags": ""
+    "tags": "NonInstance"
   },
   {
     "index": 95,
@@ -1149,7 +1149,7 @@
     "source_path": "ostd/src/io/io_mem/mod.rs",
     "source_line": 186,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/mod.rs#L186",
-    "tags": ""
+    "tags": "NonVolatile"
   },
   {
     "index": 97,
@@ -1161,7 +1161,7 @@
     "source_path": "ostd/src/io/io_mem/mod.rs",
     "source_line": 205,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/mod.rs#L205",
-    "tags": ""
+    "tags": "NonVolatile"
   },
   {
     "index": 98,
@@ -1173,7 +1173,7 @@
     "source_path": "ostd/src/io/io_mem/allocator.rs",
     "source_line": 157,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/allocator.rs#L157",
-    "tags": ""
+    "tags": "NonInstance"
   },
   {
     "index": 99,
@@ -1197,7 +1197,7 @@
     "source_path": "ostd/src/io/io_mem/allocator.rs",
     "source_line": 55,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/allocator.rs#L55",
-    "tags": ""
+    "tags": "Owning"
   },
   {
     "index": 101,
@@ -1209,7 +1209,7 @@
     "source_path": "ostd/src/io/io_mem/util.rs",
     "source_line": 108,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/util.rs#L108",
-    "tags": "Align, Valid, ValidWrite"
+    "tags": "Align, ValidWrite, Valid"
   },
   {
     "index": 102,
@@ -1221,7 +1221,7 @@
     "source_path": "ostd/src/io/io_mem/util.rs",
     "source_line": 137,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/util.rs#L137",
-    "tags": "Align, Valid, ValidRead"
+    "tags": "Align, ValidRead, Valid"
   },
   {
     "index": 103,
@@ -1233,7 +1233,7 @@
     "source_path": "ostd/src/io/io_mem/util.rs",
     "source_line": 164,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/util.rs#L164",
-    "tags": "Valid"
+    "tags": "Align, Valid"
   },
   {
     "index": 104,
@@ -1257,7 +1257,7 @@
     "source_path": "ostd/src/io/io_port/allocator.rs",
     "source_line": 57,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_port/allocator.rs#L57",
-    "tags": ""
+    "tags": "Owning"
   },
   {
     "index": 106,
@@ -1269,7 +1269,7 @@
     "source_path": "ostd/src/mm/dma/util.rs",
     "source_line": 158,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/dma/util.rs#L158",
-    "tags": ""
+    "tags": "Typed, FlagSet"
   },
   {
     "index": 107,
@@ -1281,7 +1281,7 @@
     "source_path": "ostd/src/mm/dma/util.rs",
     "source_line": 175,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/dma/util.rs#L175",
-    "tags": ""
+    "tags": "Typed, OriginateFrom"
   },
   {
     "index": 108,
@@ -1305,7 +1305,7 @@
     "source_path": "ostd/src/mm/frame/mod.rs",
     "source_line": 206,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/mod.rs#L206",
-    "tags": ""
+    "tags": "OriginateFrom"
   },
   {
     "index": 110,
@@ -1341,7 +1341,7 @@
     "source_path": "ostd/src/mm/frame/frame_ref.rs",
     "source_line": 29,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/frame_ref.rs#L29",
-    "tags": ""
+    "tags": "Alive"
   },
   {
     "index": 113,
@@ -1389,7 +1389,7 @@
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 333,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L333",
-    "tags": ""
+    "tags": "Owning"
   },
   {
     "index": 117,
@@ -1413,7 +1413,7 @@
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 365,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L365",
-    "tags": ""
+    "tags": "Owning"
   },
   {
     "index": 119,
@@ -1425,7 +1425,7 @@
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 146,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L146",
-    "tags": ""
+    "tags": "InBound, ValidRead"
   },
   {
     "index": 120,
@@ -1521,7 +1521,7 @@
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 68,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L68",
-    "tags": ""
+    "tags": "Typed, CanFail"
   },
   {
     "index": 128,
@@ -1533,7 +1533,7 @@
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 88,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L88",
-    "tags": ""
+    "tags": "Typed, CanFail"
   },
   {
     "index": 129,
@@ -1545,7 +1545,7 @@
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 109,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L109",
-    "tags": ""
+    "tags": "CanFail"
   },
   {
     "index": 130,
@@ -1569,7 +1569,7 @@
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 125,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L125",
-    "tags": ""
+    "tags": "Typed"
   },
   {
     "index": 132,
@@ -1581,7 +1581,7 @@
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 144,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L144",
-    "tags": ""
+    "tags": "Typed"
   },
   {
     "index": 133,
@@ -1593,7 +1593,7 @@
     "source_path": "ostd/src/mm/kspace/mod.rs",
     "source_line": 306,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/kspace/mod.rs#L306",
-    "tags": "CallOnce"
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 134,
@@ -1605,7 +1605,7 @@
     "source_path": "ostd/src/mm/kspace/kvirt_area.rs",
     "source_line": 168,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/kspace/kvirt_area.rs#L168",
-    "tags": ""
+    "tags": "Align"
   },
   {
     "index": 135,
@@ -1701,7 +1701,7 @@
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 146,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L146",
-    "tags": ""
+    "tags": "ValidNum"
   },
   {
     "index": 143,
@@ -1725,7 +1725,7 @@
     "source_path": "ostd/src/mm/page_table/boot_pt.rs",
     "source_line": 73,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/boot_pt.rs#L73",
-    "tags": "CallOnce"
+    "tags": "CallOnce, CurThread"
   },
   {
     "index": 145,
@@ -1761,7 +1761,7 @@
     "source_path": "ostd/src/mm/page_table/cursor/mod.rs",
     "source_line": 422,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/mod.rs#L422",
-    "tags": ""
+    "tags": "Align"
   },
   {
     "index": 148,
@@ -1773,7 +1773,7 @@
     "source_path": "ostd/src/mm/page_table/cursor/mod.rs",
     "source_line": 544,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/mod.rs#L544",
-    "tags": ""
+    "tags": "ValidNum"
   },
   {
     "index": 149,
@@ -1809,7 +1809,7 @@
     "source_path": "ostd/src/mm/page_table/node/mod.rs",
     "source_line": 94,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L94",
-    "tags": "RefTransfer"
+    "tags": "RefTransfer, CurThread"
   },
   {
     "index": 152,
@@ -1833,7 +1833,7 @@
     "source_path": "ostd/src/mm/page_table/node/mod.rs",
     "source_line": 160,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L160",
-    "tags": "LockHold"
+    "tags": "InBound, LockHold"
   },
   {
     "index": 154,
@@ -1857,7 +1857,7 @@
     "source_path": "ostd/src/mm/page_table/node/mod.rs",
     "source_line": 232,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L232",
-    "tags": "InBound"
+    "tags": "InBound, FlagSet"
   },
   {
     "index": 156,
@@ -1881,7 +1881,7 @@
     "source_path": "ostd/src/mm/page_table/node/pte_state.rs",
     "source_line": 64,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/pte_state.rs#L64",
-    "tags": ""
+    "tags": "NonMutRef, NonInstance"
   },
   {
     "index": 158,
@@ -1893,7 +1893,7 @@
     "source_path": "ostd/src/mm/page_table/node/pte_state.rs",
     "source_line": 105,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/pte_state.rs#L105",
-    "tags": ""
+    "tags": "Alive"
   },
   {
     "index": 159,
@@ -1905,7 +1905,7 @@
     "source_path": "ostd/src/smp.rs",
     "source_line": 92,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/smp.rs#L92",
-    "tags": ""
+    "tags": "CalledBy"
   },
   {
     "index": 160,
@@ -1917,7 +1917,7 @@
     "source_path": "ostd/src/sync/rcu/mod.rs",
     "source_line": 534,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/mod.rs#L534",
-    "tags": ""
+    "tags": "CurThread"
   },
   {
     "index": 161,
@@ -1965,7 +1965,7 @@
     "source_path": "ostd/src/sync/rcu/non_null/mod.rs",
     "source_line": 60,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/non_null/mod.rs#L60",
-    "tags": "NonAccessable, OriginateFrom"
+    "tags": "Alias, NonAccessable, OriginateFrom"
   },
   {
     "index": 165,
@@ -2013,7 +2013,7 @@
     "source_path": "ostd/src/task/utils.rs",
     "source_line": 30,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/task/utils.rs#L30",
-    "tags": ""
+    "tags": "NonConcurrent"
   },
   {
     "index": 169,
@@ -2037,7 +2037,7 @@
     "source_path": "ostd/src/util/id_set.rs",
     "source_line": 73,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/util/id_set.rs#L73",
-    "tags": ""
+    "tags": "ValidNum"
   },
   {
     "index": 171,
@@ -2049,6 +2049,6 @@
     "source_path": "ostd/libs/linux-bzimage/setup/src/x86/legacy_i386/alloc.rs",
     "source_line": 20,
     "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/libs/linux-bzimage/setup/src/x86/legacy_i386/alloc.rs#L20",
-    "tags": ""
+    "tags": "Valid"
   }
 ]
