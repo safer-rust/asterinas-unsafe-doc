@@ -216,9 +216,9 @@ def parse_unsafe_items(
     lines = rust_code.splitlines(keepends=True)
     items: List[UnsafeItem] = []
 
-    re_pub_unsafe_fn = re.compile(r"^\s*pub\s+unsafe\s+fn\s+([A-Za-z_][A-Za-z0-9_]*)\b")
-    re_trait_unsafe_fn = re.compile(r"^\s*(?:pub\s+)?unsafe\s+fn\s+([A-Za-z_][A-Za-z0-9_]*)\b")
-    re_pub_unsafe_trait = re.compile(r"^\s*pub\s+unsafe\s+trait\s+([A-Za-z_][A-Za-z0-9_]*)\b")
+    re_pub_unsafe_fn = re.compile(r"^\s*pub(?:\s*\([^)]*\))?\s+unsafe\s+fn\s+([A-Za-z_][A-Za-z0-9_]*)\b")
+    re_trait_unsafe_fn = re.compile(r"^\s*(?:pub(?:\s*\([^)]*\))?\s+)?unsafe\s+fn\s+([A-Za-z_][A-Za-z0-9_]*)\b")
+    re_pub_unsafe_trait = re.compile(r"^\s*pub(?:\s*\([^)]*\))?\s+unsafe\s+trait\s+([A-Za-z_][A-Za-z0-9_]*)\b")
     re_impl = re.compile(r"^\s*impl\b")
     link_source_path = remote_source_path if remote_source_path else file_path
 
