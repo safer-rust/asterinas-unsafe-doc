@@ -8,7 +8,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called only once on each application processor.\n2. This function must be called after the BSP's call to [`late_init_on_bsp`]\nand before any other architecture-specific code in this module is called\non this AP.",
     "source_path": "ostd/src/arch/loongarch/mod.rs",
     "source_line": 61,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mod.rs#L61"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mod.rs#L61",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 2,
@@ -19,7 +20,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called only once in the boot context of the\nbootstrapping processor.\n2. This function must be called after the kernel page table is activated on\nthe bootstrapping processor.",
     "source_path": "ostd/src/arch/loongarch/mod.rs",
     "source_line": 34,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mod.rs#L34"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mod.rs#L34",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 3,
@@ -30,7 +32,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/loongarch/boot/smp.rs",
     "source_line": 11,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/boot/smp.rs#L11"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/boot/smp.rs#L11",
+    "tags": ""
   },
   {
     "index": 4,
@@ -41,7 +44,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called only once in the boot context of the\nbootstrapping processor.\n2. This function must be called after the kernel page table is activated on\nthe bootstrapping processor.",
     "source_path": "ostd/src/arch/loongarch/io/mod.rs",
     "source_line": 23,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/mod.rs#L23"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/mod.rs#L23",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 5,
@@ -52,7 +56,8 @@
     "safety_doc": "# Safety\n\n- `dst_ptr` must be valid for writes of `count` bytes.\n- `src_io_ptr` must be valid for MMIO reads of `count` bytes.",
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 57,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L57"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L57",
+    "tags": "Valid, ValidWrite"
   },
   {
     "index": 6,
@@ -63,7 +68,8 @@
     "safety_doc": "# Safety\n\n- `dst_ptr` must be valid or in user space for writes of `count` bytes.\n- `src_io_ptr` must be valid for MMIO reads of `count` bytes.",
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 93,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L93"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L93",
+    "tags": "Valid"
   },
   {
     "index": 7,
@@ -74,7 +80,8 @@
     "safety_doc": "# Safety\n\n- `src_ptr` must be valid for reads of `count` bytes.\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 75,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L75"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L75",
+    "tags": "Valid, ValidRead"
   },
   {
     "index": 8,
@@ -85,7 +92,8 @@
     "safety_doc": "# Safety\n\n- `src_ptr` must be valid or in user space for reads of `count` bytes.\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 109,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L109"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L109",
+    "tags": "Valid"
   },
   {
     "index": 9,
@@ -96,7 +104,8 @@
     "safety_doc": "# Safety\n\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 124,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L124"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L124",
+    "tags": "Valid"
   },
   {
     "index": 10,
@@ -107,7 +116,8 @@
     "safety_doc": "# Safety\n\nSame as the safety requirement of `core::ptr::read_volatile`.",
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 28,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L28"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L28",
+    "tags": ""
   },
   {
     "index": 11,
@@ -118,7 +128,8 @@
     "safety_doc": "# Safety\n\nSame as the safety requirement of `core::ptr::write_volatile`.",
     "source_path": "ostd/src/arch/loongarch/io/io_mem.rs",
     "source_line": 44,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L44"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/io/io_mem.rs#L44",
+    "tags": ""
   },
   {
     "index": 12,
@@ -129,7 +140,8 @@
     "safety_doc": "# Safety\n\nMapping an incorrect address may lead to a kernel data leak.",
     "source_path": "ostd/src/arch/loongarch/iommu/mod.rs",
     "source_line": 18,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/iommu/mod.rs#L18"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/iommu/mod.rs#L18",
+    "tags": ""
   },
   {
     "index": 13,
@@ -140,7 +152,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/loongarch/mm/mod.rs",
     "source_line": 340,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L340"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L340",
+    "tags": ""
   },
   {
     "index": 14,
@@ -151,7 +164,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/loongarch/mm/mod.rs",
     "source_line": 335,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L335"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L335",
+    "tags": ""
   },
   {
     "index": 15,
@@ -162,7 +176,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/loongarch/mm/mod.rs",
     "source_line": 323,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L323"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L323",
+    "tags": ""
   },
   {
     "index": 16,
@@ -173,7 +188,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/loongarch/mm/mod.rs",
     "source_line": 329,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L329"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L329",
+    "tags": ""
   },
   {
     "index": 17,
@@ -184,7 +200,8 @@
     "safety_doc": "# Safety\n\nChanging the root-level page table is unsafe, because it's possible to violate memory safety by\nchanging the page mapping.",
     "source_path": "ostd/src/arch/loongarch/mm/mod.rs",
     "source_line": 129,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L129"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L129",
+    "tags": ""
   },
   {
     "index": 18,
@@ -195,7 +212,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that\n- the virtual address range and DMA direction correspond correctly to a\nDMA region;\n- `can_sync_dma()` is `true`.",
     "source_path": "ostd/src/arch/loongarch/mm/mod.rs",
     "source_line": 116,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L116"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/mm/mod.rs#L116",
+    "tags": ""
   },
   {
     "index": 19,
@@ -206,7 +224,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/loongarch/task/mod.rs",
     "source_line": 73,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/task/mod.rs#L73"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/task/mod.rs#L73",
+    "tags": ""
   },
   {
     "index": 20,
@@ -217,7 +236,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/loongarch/task/mod.rs",
     "source_line": 74,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/task/mod.rs#L74"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/task/mod.rs#L74",
+    "tags": ""
   },
   {
     "index": 21,
@@ -228,7 +248,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/loongarch/task/mod.rs",
     "source_line": 75,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/task/mod.rs#L75"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/task/mod.rs#L75",
+    "tags": ""
   },
   {
     "index": 22,
@@ -239,7 +260,8 @@
     "safety_doc": "# Safety\n\nOn the current CPU, this function must be called\n- only once and\n- before any trap can occur.",
     "source_path": "ostd/src/arch/loongarch/trap/mod.rs",
     "source_line": 31,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/trap/mod.rs#L31"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/trap/mod.rs#L31",
+    "tags": "CallOnce"
   },
   {
     "index": 23,
@@ -250,7 +272,8 @@
     "safety_doc": "# Safety\n\nOn the current CPU, this function must be called\n- only once and\n- before any trap can occur.",
     "source_path": "ostd/src/arch/loongarch/trap/trap.rs",
     "source_line": 16,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/trap/trap.rs#L16"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/loongarch/trap/trap.rs#L16",
+    "tags": "CallOnce"
   },
   {
     "index": 24,
@@ -261,7 +284,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called only once on each application processor.\n2. This function must be called after the BSP's call to [`late_init_on_bsp`]\nand before any other architecture-specific code in this module is called\non this AP.",
     "source_path": "ostd/src/arch/riscv/mod.rs",
     "source_line": 79,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mod.rs#L79"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mod.rs#L79",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 25,
@@ -272,7 +296,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called only once in the boot context of the\nbootstrapping processor.\n2. This function must be called after the kernel page table is activated on\nthe bootstrapping processor.",
     "source_path": "ostd/src/arch/riscv/mod.rs",
     "source_line": 35,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mod.rs#L35"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mod.rs#L35",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 26,
@@ -283,7 +308,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that\n1. we're in the boot context of the BSP,\n2. all APs have not yet been booted, and\n3. the arguments are valid to boot APs.",
     "source_path": "ostd/src/arch/riscv/boot/smp.rs",
     "source_line": 39,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/boot/smp.rs#L39"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/boot/smp.rs#L39",
+    "tags": ""
   },
   {
     "index": 27,
@@ -294,7 +320,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called only once in the boot context of the\nbootstrapping processor.\n2. This function must be called after the kernel page table is activated on\nthe bootstrapping processor.",
     "source_path": "ostd/src/arch/riscv/io/mod.rs",
     "source_line": 23,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/mod.rs#L23"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/mod.rs#L23",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 28,
@@ -305,7 +332,8 @@
     "safety_doc": "# Safety\n\n- `dst_ptr` must be valid for writes of `count` bytes.\n- `src_io_ptr` must be valid for MMIO reads of `count` bytes.",
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 57,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L57"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L57",
+    "tags": "Valid, ValidWrite"
   },
   {
     "index": 29,
@@ -316,7 +344,8 @@
     "safety_doc": "# Safety\n\n- `dst_ptr` must be valid or in user space for writes of `count` bytes.\n- `src_io_ptr` must be valid for MMIO reads of `count` bytes.",
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 93,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L93"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L93",
+    "tags": "Valid"
   },
   {
     "index": 30,
@@ -327,7 +356,8 @@
     "safety_doc": "# Safety\n\n- `src_ptr` must be valid for reads of `count` bytes.\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 75,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L75"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L75",
+    "tags": "Valid, ValidRead"
   },
   {
     "index": 31,
@@ -338,7 +368,8 @@
     "safety_doc": "# Safety\n\n- `src_ptr` must be valid or in user space for reads of `count` bytes.\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 109,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L109"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L109",
+    "tags": "Valid"
   },
   {
     "index": 32,
@@ -349,7 +380,8 @@
     "safety_doc": "# Safety\n\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 124,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L124"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L124",
+    "tags": "Valid"
   },
   {
     "index": 33,
@@ -360,7 +392,8 @@
     "safety_doc": "# Safety\n\nSame as the safety requirement of `core::ptr::read_volatile`.",
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 28,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L28"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L28",
+    "tags": ""
   },
   {
     "index": 34,
@@ -371,7 +404,8 @@
     "safety_doc": "# Safety\n\nSame as the safety requirement of `core::ptr::write_volatile`.",
     "source_path": "ostd/src/arch/riscv/io/io_mem.rs",
     "source_line": 44,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L44"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/io/io_mem.rs#L44",
+    "tags": ""
   },
   {
     "index": 35,
@@ -382,7 +416,8 @@
     "safety_doc": "# Safety\n\nMapping an incorrect address may lead to a kernel data leak.",
     "source_path": "ostd/src/arch/riscv/iommu/mod.rs",
     "source_line": 18,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/iommu/mod.rs#L18"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/iommu/mod.rs#L18",
+    "tags": ""
   },
   {
     "index": 36,
@@ -393,7 +428,8 @@
     "safety_doc": "# Safety\n\nThis function is safe to call on the following conditions:\n1. It is called once and at most once on this AP.\n2. It is called before any other public functions of this module is called\non this AP.",
     "source_path": "ostd/src/arch/riscv/irq/chip/mod.rs",
     "source_line": 59,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/chip/mod.rs#L59"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/chip/mod.rs#L59",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 37,
@@ -404,7 +440,8 @@
     "safety_doc": "# Safety\n\nThis function is safe to call on the following conditions:\n1. It is called once and at most once at a proper timing in the boot context\nof the BSP.\n2. It is called before any other public functions of this module is called.",
     "source_path": "ostd/src/arch/riscv/irq/chip/mod.rs",
     "source_line": 37,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/chip/mod.rs#L37"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/chip/mod.rs#L37",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 38,
@@ -415,7 +452,8 @@
     "safety_doc": "# Safety\n\nThis function can only be called before any other harts can send IPIs to\nthis application hart.",
     "source_path": "ostd/src/arch/riscv/irq/ipi.rs",
     "source_line": 46,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/ipi.rs#L46"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/ipi.rs#L46",
+    "tags": ""
   },
   {
     "index": 39,
@@ -426,7 +464,8 @@
     "safety_doc": "# Safety\n\nThis function can only be called on the BSP and before any other\nIPI-related function is called.",
     "source_path": "ostd/src/arch/riscv/irq/ipi.rs",
     "source_line": 28,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/ipi.rs#L28"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/irq/ipi.rs#L28",
+    "tags": ""
   },
   {
     "index": 40,
@@ -437,7 +476,8 @@
     "safety_doc": "# Safety\n\nChanging the root-level page table is unsafe, because it's possible to violate memory safety by\nchanging the page mapping.",
     "source_path": "ostd/src/arch/riscv/mm/mod.rs",
     "source_line": 163,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mm/mod.rs#L163"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mm/mod.rs#L163",
+    "tags": ""
   },
   {
     "index": 41,
@@ -448,7 +488,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that\n- the virtual address range and DMA direction correspond correctly to a\nDMA region;\n- `can_sync_dma()` is `true`.",
     "source_path": "ostd/src/arch/riscv/mm/mod.rs",
     "source_line": 116,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mm/mod.rs#L116"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/mm/mod.rs#L116",
+    "tags": ""
   },
   {
     "index": 42,
@@ -459,7 +500,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/riscv/task/mod.rs",
     "source_line": 77,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/task/mod.rs#L77"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/task/mod.rs#L77",
+    "tags": ""
   },
   {
     "index": 43,
@@ -470,7 +512,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/riscv/task/mod.rs",
     "source_line": 78,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/task/mod.rs#L78"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/task/mod.rs#L78",
+    "tags": ""
   },
   {
     "index": 44,
@@ -481,7 +524,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/riscv/task/mod.rs",
     "source_line": 79,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/task/mod.rs#L79"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/task/mod.rs#L79",
+    "tags": ""
   },
   {
     "index": 45,
@@ -492,7 +536,8 @@
     "safety_doc": "# Safety\n\nThis function must be called on an AP that hasn't called this function.",
     "source_path": "ostd/src/arch/riscv/timer/mod.rs",
     "source_line": 72,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/timer/mod.rs#L72"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/timer/mod.rs#L72",
+    "tags": ""
   },
   {
     "index": 46,
@@ -503,7 +548,8 @@
     "safety_doc": "# Safety\n\nThis function is safe to call on the following conditions:\n1. It is called once and at most once at a proper timing in the boot context\nof the BSP.\n2. It is called before any other public functions of this module is called.",
     "source_path": "ostd/src/arch/riscv/timer/mod.rs",
     "source_line": 31,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/timer/mod.rs#L31"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/timer/mod.rs#L31",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 47,
@@ -514,7 +560,8 @@
     "safety_doc": "# Safety\n\nOn the current CPU, this function must be called\n- only once and\n- before any trap can occur.",
     "source_path": "ostd/src/arch/riscv/trap/mod.rs",
     "source_line": 35,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/trap/mod.rs#L35"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/trap/mod.rs#L35",
+    "tags": "CallOnce"
   },
   {
     "index": 48,
@@ -525,7 +572,8 @@
     "safety_doc": "# Safety\n\nOn the current CPU, this function must be called\n- only once and\n- before any trap can occur.",
     "source_path": "ostd/src/arch/riscv/trap/trap.rs",
     "source_line": 50,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/trap/trap.rs#L50"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/riscv/trap/trap.rs#L50",
+    "tags": "CallOnce"
   },
   {
     "index": 49,
@@ -536,7 +584,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called only once on each application processor.\n2. This function must be called after the BSP's call to [`late_init_on_bsp`]\nand before any other architecture-specific code in this module is called\non this AP.",
     "source_path": "ostd/src/arch/x86/mod.rs",
     "source_line": 124,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mod.rs#L124"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mod.rs#L124",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 50,
@@ -547,7 +596,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called only once in the boot context of the\nbootstrapping processor.\n2. This function must be called after the kernel page table is activated on\nthe bootstrapping processor.",
     "source_path": "ostd/src/arch/x86/mod.rs",
     "source_line": 80,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mod.rs#L80"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mod.rs#L80",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 51,
@@ -558,7 +608,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that\n1. we're in the boot context of the BSP,\n2. all APs have not yet been booted, and\n3. the arguments are valid to boot APs.",
     "source_path": "ostd/src/arch/x86/boot/smp.rs",
     "source_line": 117,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/boot/smp.rs#L117"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/boot/smp.rs#L117",
+    "tags": ""
   },
   {
     "index": 52,
@@ -569,7 +620,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called only once in the boot context of the\nbootstrapping processor.\n2. This function must be called after the kernel page table is activated on\nthe bootstrapping processor.",
     "source_path": "ostd/src/arch/x86/io/mod.rs",
     "source_line": 36,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/mod.rs#L36"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/mod.rs#L36",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 53,
@@ -580,7 +632,8 @@
     "safety_doc": "# Safety\n\n- `dst_ptr` must be valid for writes of `count` bytes.\n- `src_io_ptr` must be valid for MMIO reads of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 18,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L18"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L18",
+    "tags": "Valid, ValidWrite"
   },
   {
     "index": 54,
@@ -591,7 +644,8 @@
     "safety_doc": "# Safety\n\n- `dst_ptr` must be valid or in user space for writes of `count` bytes.\n- `src_io_ptr` must be valid for MMIO reads of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 62,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L62"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L62",
+    "tags": "Valid"
   },
   {
     "index": 55,
@@ -602,7 +656,8 @@
     "safety_doc": "# Safety\n\n- `src_ptr` must be valid for reads of `count` bytes.\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 40,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L40"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L40",
+    "tags": "Valid, ValidRead"
   },
   {
     "index": 56,
@@ -613,7 +668,8 @@
     "safety_doc": "# Safety\n\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.\n- `src_ptr` must be valid or in user space for reads of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 83,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L83"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L83",
+    "tags": "Valid"
   },
   {
     "index": 57,
@@ -624,7 +680,8 @@
     "safety_doc": "# Safety\n\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/cvm.rs",
     "source_line": 120,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L120"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/cvm.rs#L120",
+    "tags": "Valid"
   },
   {
     "index": 58,
@@ -635,7 +692,8 @@
     "safety_doc": "# Safety\n\n- `dst_ptr` must be valid for writes of `count` bytes.\n- `src_io_ptr` must be valid for MMIO reads of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 148,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L148"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L148",
+    "tags": "Valid, ValidWrite"
   },
   {
     "index": 59,
@@ -646,7 +704,8 @@
     "safety_doc": "# Safety\n\n- `dst_ptr` must be valid or in user space for writes of `count` bytes.\n- `src_io_ptr` must be valid for MMIO reads of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 178,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L178"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L178",
+    "tags": "Valid"
   },
   {
     "index": 60,
@@ -657,7 +716,8 @@
     "safety_doc": "# Safety\n\n- `src_ptr` must be valid for reads of `count` bytes.\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 163,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L163"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L163",
+    "tags": "Valid, ValidRead"
   },
   {
     "index": 61,
@@ -668,7 +728,8 @@
     "safety_doc": "# Safety\n\n- `src_ptr` must be valid or in user space for reads of `count` bytes.\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 199,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L199"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L199",
+    "tags": "Valid"
   },
   {
     "index": 62,
@@ -679,7 +740,8 @@
     "safety_doc": "# Safety\n\n- `dst_io_ptr` must be valid for MMIO writes of `count` bytes.",
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 219,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L219"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L219",
+    "tags": "Valid"
   },
   {
     "index": 63,
@@ -690,7 +752,8 @@
     "safety_doc": "# Safety\n\nSame as the safety requirement of `core::ptr::read_volatile`.",
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 30,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L30"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L30",
+    "tags": ""
   },
   {
     "index": 64,
@@ -701,7 +764,8 @@
     "safety_doc": "# Safety\n\nSame as the safety requirement of `core::ptr::write_volatile`.",
     "source_path": "ostd/src/arch/x86/io/io_mem.rs",
     "source_line": 73,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L73"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/io/io_mem.rs#L73",
+    "tags": ""
   },
   {
     "index": 65,
@@ -712,7 +776,8 @@
     "safety_doc": "# Safety\n\nWhile the physical address is mapped as the device address (i.e. from calling this method to\ncalling [`unmap`]), it must point to an untyped memory page. Otherwise, the device may corrupt\nkernel data, which could lead to memory safety issues.",
     "source_path": "ostd/src/arch/x86/iommu/dma_remapping/mod.rs",
     "source_line": 84,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/iommu/dma_remapping/mod.rs#L84"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/iommu/dma_remapping/mod.rs#L84",
+    "tags": ""
   },
   {
     "index": 66,
@@ -723,7 +788,8 @@
     "safety_doc": "# Safety\n\nUser must ensure the given paddr is a valid one.",
     "source_path": "ostd/src/arch/x86/iommu/dma_remapping/context_table.rs",
     "source_line": 67,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/iommu/dma_remapping/context_table.rs#L67"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/iommu/dma_remapping/context_table.rs#L67",
+    "tags": ""
   },
   {
     "index": 67,
@@ -734,7 +800,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the base address is a valid IOMMU base address and that it has\nexclusive ownership of the IOMMU fault event registers.",
     "source_path": "ostd/src/arch/x86/iommu/fault.rs",
     "source_line": 244,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/iommu/fault.rs#L244"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/iommu/fault.rs#L244",
+    "tags": "Owning"
   },
   {
     "index": 68,
@@ -745,7 +812,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the base address is a valid IOMMU base address and that it has\nexclusive ownership of the IOMMU invalidation registers.",
     "source_path": "ostd/src/arch/x86/iommu/registers/invalidation.rs",
     "source_line": 39,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/iommu/registers/invalidation.rs#L39"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/iommu/registers/invalidation.rs#L39",
+    "tags": "Owning"
   },
   {
     "index": 69,
@@ -756,7 +824,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the base address is a valid I/O APIC base address.",
     "source_path": "ostd/src/arch/x86/irq/chip/ioapic.rs",
     "source_line": 29,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/irq/chip/ioapic.rs#L29"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/irq/chip/ioapic.rs#L29",
+    "tags": ""
   },
   {
     "index": 70,
@@ -767,7 +836,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the base address is a valid I/O APIC base address.",
     "source_path": "ostd/src/arch/x86/irq/chip/ioapic.rs",
     "source_line": 171,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/irq/chip/ioapic.rs#L171"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/irq/chip/ioapic.rs#L171",
+    "tags": ""
   },
   {
     "index": 71,
@@ -778,7 +848,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/x86/irq/chip/ioapic.rs",
     "source_line": 180,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/irq/chip/ioapic.rs#L180"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/irq/chip/ioapic.rs#L180",
+    "tags": ""
   },
   {
     "index": 72,
@@ -789,7 +860,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/x86/irq/chip/ioapic.rs",
     "source_line": 189,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/irq/chip/ioapic.rs#L189"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/irq/chip/ioapic.rs#L189",
+    "tags": ""
   },
   {
     "index": 73,
@@ -800,7 +872,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that xAPIC is present.",
     "source_path": "ostd/src/arch/x86/kernel/apic/xapic.rs",
     "source_line": 143,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/kernel/apic/xapic.rs#L143"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/kernel/apic/xapic.rs#L143",
+    "tags": ""
   },
   {
     "index": 74,
@@ -811,7 +884,8 @@
     "safety_doc": "# Safety\n\nChanging the root-level page table is unsafe, because it's possible to violate memory safety by\nchanging the page mapping.",
     "source_path": "ostd/src/arch/x86/mm/mod.rs",
     "source_line": 144,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mm/mod.rs#L144"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mm/mod.rs#L144",
+    "tags": ""
   },
   {
     "index": 75,
@@ -822,7 +896,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that\n- the virtual address range and DMA direction correspond correctly to a\nDMA region;\n- `can_sync_dma()` is `true`.",
     "source_path": "ostd/src/arch/x86/mm/mod.rs",
     "source_line": 130,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mm/mod.rs#L130"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/mm/mod.rs#L130",
+    "tags": ""
   },
   {
     "index": 76,
@@ -833,7 +908,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/x86/task/mod.rs",
     "source_line": 64,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/task/mod.rs#L64"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/task/mod.rs#L64",
+    "tags": ""
   },
   {
     "index": 77,
@@ -844,7 +920,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/x86/task/mod.rs",
     "source_line": 65,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/task/mod.rs#L65"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/task/mod.rs#L65",
+    "tags": ""
   },
   {
     "index": 78,
@@ -855,7 +932,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/arch/x86/task/mod.rs",
     "source_line": 66,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/task/mod.rs#L66"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/task/mod.rs#L66",
+    "tags": ""
   },
   {
     "index": 79,
@@ -866,7 +944,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that:\n- The provided physical address is page aligned.\n- The provided physical address range is in bounds, i.e., it should fall\nwithin the maximum Guest Physical Address (GPA) limit.\n- All of the physical pages are untyped memory. Therefore, converting and\nerasing the data will not cause memory safety issues.",
     "source_path": "ostd/src/arch/x86/tdx_guest.rs",
     "source_line": 48,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/tdx_guest.rs#L48"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/tdx_guest.rs#L48",
+    "tags": "Align, InBound"
   },
   {
     "index": 80,
@@ -877,7 +956,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that:\n- The provided physical address is page aligned.\n- The provided physical address range is in bounds, i.e., it should fall\nwithin the maximum Guest Physical Address (GPA) limit.\n- All of the physical pages are untyped memory. Therefore, converting and\nerasing the data will not cause memory safety issues.",
     "source_path": "ostd/src/arch/x86/tdx_guest.rs",
     "source_line": 26,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/tdx_guest.rs#L26"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/tdx_guest.rs#L26",
+    "tags": "Align, InBound"
   },
   {
     "index": 81,
@@ -888,7 +968,8 @@
     "safety_doc": "# Safety\n\nOn the current CPU, this function must be called\n- only once and\n- before any trap can occur.",
     "source_path": "ostd/src/arch/x86/trap/mod.rs",
     "source_line": 123,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/trap/mod.rs#L123"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/trap/mod.rs#L123",
+    "tags": "CallOnce"
   },
   {
     "index": 82,
@@ -899,7 +980,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that no preemption can occur during the method, otherwise we may\naccidentally load a wrong GDT and TSS that actually belongs to another CPU.",
     "source_path": "ostd/src/arch/x86/trap/gdt.rs",
     "source_line": 33,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/trap/gdt.rs#L33"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/trap/gdt.rs#L33",
+    "tags": ""
   },
   {
     "index": 83,
@@ -910,7 +992,8 @@
     "safety_doc": "# Safety\n\nThe caller needs to ensure that `gdt::init_on_cpu` has been called before,\nso the segment selectors used in the `syscall` and `sysret` instructions\nhave been properly initialized.",
     "source_path": "ostd/src/arch/x86/trap/syscall.rs",
     "source_line": 44,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/trap/syscall.rs#L44"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/arch/x86/trap/syscall.rs#L44",
+    "tags": "Init"
   },
   {
     "index": 84,
@@ -921,7 +1004,8 @@
     "safety_doc": "# Safety\n\nThis function must be called only once at a proper timing on the BSP by the\n[`arch::boot`] module.\n\n[`arch::boot`]: crate::arch::boot",
     "source_path": "ostd/src/boot/mod.rs",
     "source_line": 179,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/boot/mod.rs#L179"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/boot/mod.rs#L179",
+    "tags": "CallOnce"
   },
   {
     "index": 85,
@@ -932,7 +1016,8 @@
     "safety_doc": "# Safety\n\nThis function can only be called in the boot context of the BSP where APs have\nnot yet been booted.",
     "source_path": "ostd/src/boot/smp.rs",
     "source_line": 72,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/boot/smp.rs#L72"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/boot/smp.rs#L72",
+    "tags": "Allocated"
   },
   {
     "index": 86,
@@ -943,7 +1028,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that:\n1. We're in the boot context of an AP.\n2. The CPU ID of the AP is correct.",
     "source_path": "ostd/src/cpu/mod.rs",
     "source_line": 52,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/mod.rs#L52"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/mod.rs#L52",
+    "tags": ""
   },
   {
     "index": 87,
@@ -954,7 +1040,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that\n1. We're in the boot context of the BSP and APs have not yet booted.\n2. The number of CPUs is available.\n3. CPU-local storage has NOT been used.",
     "source_path": "ostd/src/cpu/mod.rs",
     "source_line": 28,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/mod.rs#L28"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/mod.rs#L28",
+    "tags": ""
   },
   {
     "index": 88,
@@ -965,7 +1052,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that:\n1. We're in the boot context of an AP.\n2. The CPU ID of the AP is correct.",
     "source_path": "ostd/src/cpu/id.rs",
     "source_line": 238,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L238"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L238",
+    "tags": ""
   },
   {
     "index": 89,
@@ -976,7 +1064,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that\n1. We're in the boot context of the BSP and APs have not yet booted.\n2. The number of CPUs is correct.",
     "source_path": "ostd/src/cpu/id.rs",
     "source_line": 193,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L193"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L193",
+    "tags": ""
   },
   {
     "index": 90,
@@ -987,7 +1076,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure:\n1. This method is called on each CPU in the boot context.\n2. The CPU ID for the current CPU is correct.",
     "source_path": "ostd/src/cpu/id.rs",
     "source_line": 165,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L165"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L165",
+    "tags": ""
   },
   {
     "index": 91,
@@ -998,7 +1088,8 @@
     "safety_doc": "# Safety\n\nThe implementor must ensure that the current task is pinned to the current\nCPU while any one of the instances of the implemented structure exists.\n\n[`DisabledLocalIrqGuard`]: crate::irq::DisabledLocalIrqGuard\n[`DisabledPreemptGuard`]: crate::task::DisabledPreemptGuard",
     "source_path": "ostd/src/cpu/id.rs",
     "source_line": 126,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L126"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/id.rs#L126",
+    "tags": ""
   },
   {
     "index": 92,
@@ -1009,7 +1100,8 @@
     "safety_doc": "# Safety\n\nThis function must be called in the boot context of the BSP, at a time\nwhen the APs have not yet booted.\n\nThe CPU-local data on the BSP must not be used before calling this\nfunction to copy it for the APs. Otherwise, the copied data will\ncontain non-constant (also non-`Copy`) data, resulting in undefined\nbehavior when it's loaded on the APs.\n\nThe caller must ensure that the `num_cpus` matches the number of all\nCPUs that will access the CPU-local storage.",
     "source_path": "ostd/src/cpu/local/mod.rs",
     "source_line": 201,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/local/mod.rs#L201"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/local/mod.rs#L201",
+    "tags": ""
   },
   {
     "index": 93,
@@ -1020,7 +1112,8 @@
     "safety_doc": "# Safety\n\nThe implementor must ensure that the returned pointer refers to the\nvariable on the correct CPU.",
     "source_path": "ostd/src/cpu/local/mod.rs",
     "source_line": 85,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/local/mod.rs#L85"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/cpu/local/mod.rs#L85",
+    "tags": ""
   },
   {
     "index": 94,
@@ -1031,7 +1124,8 @@
     "safety_doc": "# Safety\n\nUser must ensure that:\n\n1. All the memory that belong to the system device have been removed\nby calling the `remove` function.\n\n2. All the port I/O regions belonging to the system device are defined\nusing the macros `sensitive_io_port` and `reserve_io_port_range`.\n\n3. `MAX_IO_PORT` defined in `crate::arch::io` is guaranteed not to\nexceed the maximum value specified by architecture.",
     "source_path": "ostd/src/io/mod.rs",
     "source_line": 39,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/mod.rs#L39"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/mod.rs#L39",
+    "tags": ""
   },
   {
     "index": 95,
@@ -1042,7 +1136,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called after the kernel page table is activated.\n2. The given physical address range must be in the I/O memory region.\n3. Reading from or writing to I/O memory regions may have side effects.\nIf `SecuritySensitivity` is `Insensitive`, those side effects must\nnot cause soundness problems (e.g., they must not corrupt the kernel\nmemory).",
     "source_path": "ostd/src/io/io_mem/mod.rs",
     "source_line": 91,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/mod.rs#L91"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/mod.rs#L91",
+    "tags": "PostToFunc"
   },
   {
     "index": 96,
@@ -1053,7 +1148,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the offset and the read operation is valid,\ne.g., follows the specification when used for implementing drivers, does\nnot cause any out-of-bounds access, and does not cause unsound side\neffects (e.g., corrupting the kernel memory).",
     "source_path": "ostd/src/io/io_mem/mod.rs",
     "source_line": 186,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/mod.rs#L186"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/mod.rs#L186",
+    "tags": ""
   },
   {
     "index": 97,
@@ -1064,7 +1160,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the offset and the write operation is valid,\ne.g., follows the specification when used for implementing drivers, does\nnot cause any out-of-bounds access, and does not cause unsound side\neffects (e.g., corrupting the kernel memory).",
     "source_path": "ostd/src/io/io_mem/mod.rs",
     "source_line": 205,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/mod.rs#L205"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/mod.rs#L205",
+    "tags": ""
   },
   {
     "index": 98,
@@ -1075,7 +1172,8 @@
     "safety_doc": "# Safety\n\nUser must ensure all the memory I/O regions that belong to the system device have been removed by calling the\n`remove` function.",
     "source_path": "ostd/src/io/io_mem/allocator.rs",
     "source_line": 157,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/allocator.rs#L157"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/allocator.rs#L157",
+    "tags": ""
   },
   {
     "index": 99,
@@ -1086,7 +1184,8 @@
     "safety_doc": "# Safety\n\n1. This function must be called at most once.\n2. This function must be called after the kernel page table is activated\non the bootstrapping processor.\n3. The caller must ensure the range doesn't belong to physical memory.",
     "source_path": "ostd/src/io/io_mem/allocator.rs",
     "source_line": 90,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/allocator.rs#L90"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/allocator.rs#L90",
+    "tags": "CallOnce, PostToFunc"
   },
   {
     "index": 100,
@@ -1097,7 +1196,8 @@
     "safety_doc": "# Safety\n\nThe caller must have ownership of the MMIO region through the `IoMemAllocator::get` interface.",
     "source_path": "ostd/src/io/io_mem/allocator.rs",
     "source_line": 55,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/allocator.rs#L55"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/allocator.rs#L55",
+    "tags": ""
   },
   {
     "index": 101,
@@ -1108,7 +1208,8 @@
     "safety_doc": "# Safety\n\n- `src_io_ptr` must be valid for MMIO reads of `size_of::<T>()` bytes and properly aligned.\n- `dst_ptr` must be valid for writes of `size_of::<T>()` bytes.",
     "source_path": "ostd/src/io/io_mem/util.rs",
     "source_line": 108,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/util.rs#L108"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/util.rs#L108",
+    "tags": "Align, Valid, ValidWrite"
   },
   {
     "index": 102,
@@ -1119,7 +1220,8 @@
     "safety_doc": "# Safety\n\n- `src_ptr` must be valid for reads of `size_of::<T>()` bytes.\n- `dst_io_ptr` must be valid for MMIO writes of `size_of::<T>()` bytes and\nmust be aligned to `align_of::<T>()`.",
     "source_path": "ostd/src/io/io_mem/util.rs",
     "source_line": 137,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/util.rs#L137"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/util.rs#L137",
+    "tags": "Align, Valid, ValidRead"
   },
   {
     "index": 103,
@@ -1130,7 +1232,8 @@
     "safety_doc": "# Safety\n\n- `dst_io_ptr` must be valid for MMIO writes of `size_of::<T>()` bytes and aligned to `align_of::<T>()`.",
     "source_path": "ostd/src/io/io_mem/util.rs",
     "source_line": 164,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/util.rs#L164"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_mem/util.rs#L164",
+    "tags": "Valid"
   },
   {
     "index": 104,
@@ -1141,7 +1244,8 @@
     "safety_doc": "# Safety\n\nUser must ensure that:\n\n1. All the port I/O regions belonging to the system device are defined using the macros\n`sensitive_io_port` and `reserve_io_port_range`.\n\n2. `MAX_IO_PORT` defined in `crate::arch::io` is guaranteed not to exceed the maximum\nvalue specified by architecture.",
     "source_path": "ostd/src/io/io_port/allocator.rs",
     "source_line": 79,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_port/allocator.rs#L79"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_port/allocator.rs#L79",
+    "tags": ""
   },
   {
     "index": 105,
@@ -1152,7 +1256,8 @@
     "safety_doc": "# Safety\n\nThe caller must have ownership of the PIO region through the `IoPortAllocator::acquire` interface.",
     "source_path": "ostd/src/io/io_port/allocator.rs",
     "source_line": 57,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_port/allocator.rs#L57"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/io/io_port/allocator.rs#L57",
+    "tags": ""
   },
   {
     "index": 106,
@@ -1163,7 +1268,8 @@
     "safety_doc": "# Safety\n\nThe provided physical address range must be untyped DMA memory that\noutlives the following [`unprepare_dma()`] call.",
     "source_path": "ostd/src/mm/dma/util.rs",
     "source_line": 158,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/dma/util.rs#L158"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/dma/util.rs#L158",
+    "tags": ""
   },
   {
     "index": 107,
@@ -1174,7 +1280,8 @@
     "safety_doc": "# Safety\n\nThe provided physical address range must be untyped DMA memory that was\npreviously prepared by an [`alloc_unprotect_physical_range()`] call.",
     "source_path": "ostd/src/mm/dma/util.rs",
     "source_line": 175,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/dma/util.rs#L175"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/dma/util.rs#L175",
+    "tags": ""
   },
   {
     "index": 108,
@@ -1185,7 +1292,8 @@
     "safety_doc": "# Safety\n\nThe caller should ensure the following conditions:\n1. The physical address must represent a valid frame;\n2. The caller must have already held a reference to the frame.",
     "source_path": "ostd/src/mm/frame/mod.rs",
     "source_line": 358,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/mod.rs#L358"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/mod.rs#L358",
+    "tags": "RefTransfer"
   },
   {
     "index": 109,
@@ -1196,7 +1304,8 @@
     "safety_doc": "# Safety\n\nThe caller should only restore a `Frame` that was previously forgotten using\n[`Frame::into_raw`].\n\nAnd the restoring operation should only be done once for a forgotten\n[`Frame`]. Otherwise double-free will happen.\n\nAlso, the caller ensures that the usage of the frame is correct. There's\nno checking of the usage in this function.",
     "source_path": "ostd/src/mm/frame/mod.rs",
     "source_line": 206,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/mod.rs#L206"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/mod.rs#L206",
+    "tags": ""
   },
   {
     "index": 110,
@@ -1207,7 +1316,8 @@
     "safety_doc": "# Safety\n\nThis function should be called only once.",
     "source_path": "ostd/src/mm/frame/allocator.rs",
     "source_line": 199,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/allocator.rs#L199"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/allocator.rs#L199",
+    "tags": "CallOnce"
   },
   {
     "index": 111,
@@ -1218,7 +1328,8 @@
     "safety_doc": "# Safety\n\nThis function should be called only once after the memory regions are ready.",
     "source_path": "ostd/src/mm/frame/allocator.rs",
     "source_line": 358,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/allocator.rs#L358"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/allocator.rs#L358",
+    "tags": "CallOnce"
   },
   {
     "index": 112,
@@ -1229,7 +1340,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that:\n- the frame outlives the created reference, so that the reference can\nbe seen as borrowed from that frame.\n- the type of the [`FrameRef`] (`M`) matches the borrowed frame.",
     "source_path": "ostd/src/mm/frame/frame_ref.rs",
     "source_line": 29,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/frame_ref.rs#L29"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/frame_ref.rs#L29",
+    "tags": ""
   },
   {
     "index": 113,
@@ -1240,7 +1352,8 @@
     "safety_doc": "# Safety\n\nThis function should be called only once and only on the BSP,\nbefore any APs are started.",
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 453,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L453"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L453",
+    "tags": "CallOnce"
   },
   {
     "index": 114,
@@ -1251,7 +1364,8 @@
     "safety_doc": "# Safety\n\nThe caller should ensure that:\n- the reference count is `0` (so we are the sole owner of the frame);\n- the metadata is initialized;",
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 389,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L389"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L389",
+    "tags": "RefTransfer"
   },
   {
     "index": 115,
@@ -1262,7 +1376,8 @@
     "safety_doc": "# Safety\n\nThe caller should ensure that:\n- the reference count is `0` (so we are the sole owner of the frame);\n- the metadata is initialized;",
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 411,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L411"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L411",
+    "tags": "RefTransfer"
   },
   {
     "index": 116,
@@ -1273,7 +1388,8 @@
     "safety_doc": "# Safety\n\nThe caller should ensure that:\n- the stored metadata is initialized (by [`Self::write_meta`]) and valid.\n\nThe returned pointer should not be dereferenced as mutable unless having\nexclusive access to the metadata slot.",
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 333,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L333"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L333",
+    "tags": ""
   },
   {
     "index": 117,
@@ -1284,7 +1400,8 @@
     "safety_doc": "# Safety\n\nThe caller must have already held a reference to the frame.",
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 307,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L307"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L307",
+    "tags": "RefTransfer"
   },
   {
     "index": 118,
@@ -1295,7 +1412,8 @@
     "safety_doc": "# Safety\n\nThe caller should have exclusive access to the metadata slot's fields.",
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 365,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L365"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L365",
+    "tags": ""
   },
   {
     "index": 119,
@@ -1306,7 +1424,8 @@
     "safety_doc": "# Safety\n\nIf `on_drop` reads the page using the provided `VmReader`, the\nimplementer must ensure that the frame is safe to read.",
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 146,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L146"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/meta.rs#L146",
+    "tags": ""
   },
   {
     "index": 120,
@@ -1317,7 +1436,8 @@
     "safety_doc": "# Safety\n\nThe range must be a forgotten [`Segment`] that matches the type `M`.\nIt could be manually forgotten by [`core::mem::forget`],\n[`ManuallyDrop`], or [`Self::into_raw`].",
     "source_path": "ostd/src/mm/frame/segment.rs",
     "source_line": 117,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/segment.rs#L117"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/segment.rs#L117",
+    "tags": ""
   },
   {
     "index": 121,
@@ -1328,7 +1448,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the physical address is valid and points to\na forgotten frame that was previously casted by [`Self::into_raw`].",
     "source_path": "ostd/src/mm/frame/unique.rs",
     "source_line": 131,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/unique.rs#L131"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/frame/unique.rs#L131",
+    "tags": ""
   },
   {
     "index": 122,
@@ -1339,7 +1460,8 @@
     "safety_doc": "# Safety\n\nThe pointer to the slot must either:\n- be a free slot in a [`super::Slab`], or\n- be a free slot in a [`Segment`].\n\nIf the pointer is from a [`super::Slab`] or [`Segment`], the slot must\nhave a size that matches the slot size of the slab or segment respectively.",
     "source_path": "ostd/src/mm/heap/slot.rs",
     "source_line": 69,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/heap/slot.rs#L69"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/heap/slot.rs#L69",
+    "tags": ""
   },
   {
     "index": 123,
@@ -1350,7 +1472,8 @@
     "safety_doc": "# Safety\n\n`ptr` must be [valid] for reads of `len` bytes during the entire lifetime `a`.\n\n[valid]: crate::mm::io#safety",
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 396,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L396"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L396",
+    "tags": ""
   },
   {
     "index": 124,
@@ -1361,7 +1484,8 @@
     "safety_doc": "# Safety\n\n`ptr` must be [valid] for writes of `len` bytes during the entire lifetime `a`.\n\n[valid]: crate::mm::io#safety",
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 667,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L667"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L667",
+    "tags": ""
   },
   {
     "index": 125,
@@ -1372,7 +1496,8 @@
     "safety_doc": "# Safety\n\nThe virtual address range `ptr..ptr + len` must be in user space.",
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 501,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L501"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L501",
+    "tags": ""
   },
   {
     "index": 126,
@@ -1383,7 +1508,8 @@
     "safety_doc": "# Safety\n\n`ptr` must be in user space for `len` bytes.",
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 779,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L779"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/mod.rs#L779",
+    "tags": "Assoc"
   },
   {
     "index": 127,
@@ -1394,7 +1520,8 @@
     "safety_doc": "# Safety\n\n- `src` must point to a virtual memory region of type `Src`\nthat allows memory reads.\n- `dst` must point to a virtual memory region of type `Dst`\nthat allows memory writes.",
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 68,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L68"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L68",
+    "tags": ""
   },
   {
     "index": 128,
@@ -1405,7 +1532,8 @@
     "safety_doc": "# Safety\n\n- `dst` must point to a virtual memory region of type `Dst`\nthat allows memory writes.",
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 88,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L88"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L88",
+    "tags": ""
   },
   {
     "index": 129,
@@ -1416,7 +1544,8 @@
     "safety_doc": "# Safety\n\nAssuming the caller upholds the preconditions of [`Memcpy::memcpy`],\nthe memory copy implementation must not cause soundness problems.\nThe exact safety conditions depend on the type of the source and destination memory.\nFor example, when both sides are infallible memory,\nthe implementation must copy exactly `len` bytes from `src` to `dst`.",
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 109,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L109"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L109",
+    "tags": ""
   },
   {
     "index": 130,
@@ -1427,7 +1556,8 @@
     "safety_doc": "# Safety\n\nThe implementation must correctly fill `len` bytes at `dst` with `value`\nwhen the caller upholds the preconditions of [`Memset::memset`].",
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 134,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L134"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L134",
+    "tags": ""
   },
   {
     "index": 131,
@@ -1438,7 +1568,8 @@
     "safety_doc": "# Safety\n\n- `src` must point to a virtual memory region of type `Src`\nthat allows memory reads.\n- `dst` must point to a virtual memory region of type `Self`\nthat allows memory writes.",
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 125,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L125"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L125",
+    "tags": ""
   },
   {
     "index": 132,
@@ -1449,7 +1580,8 @@
     "safety_doc": "# Safety\n\n- `dst` must point to a virtual memory region of type `Self`\nthat allows memory writes.",
     "source_path": "ostd/src/mm/io/copy.rs",
     "source_line": 144,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L144"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/io/copy.rs#L144",
+    "tags": ""
   },
   {
     "index": 133,
@@ -1460,7 +1592,8 @@
     "safety_doc": "# Safety\n\nThis function must only be called once per CPU.",
     "source_path": "ostd/src/mm/kspace/mod.rs",
     "source_line": 306,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/kspace/mod.rs#L306"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/kspace/mod.rs#L306",
+    "tags": "CallOnce"
   },
   {
     "index": 134,
@@ -1471,7 +1604,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/mm/kspace/kvirt_area.rs",
     "source_line": 168,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/kspace/kvirt_area.rs#L168"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/kspace/kvirt_area.rs#L168",
+    "tags": ""
   },
   {
     "index": 135,
@@ -1482,7 +1616,8 @@
     "safety_doc": "# Safety\n\nThe safety preconditions are same as those of [`AtomicUsize::from_ptr`].",
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 589,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L589"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L589",
+    "tags": ""
   },
   {
     "index": 136,
@@ -1493,7 +1628,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the `root_paddr` is a pointer to a valid root\npage table node.",
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 488,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L488"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L488",
+    "tags": ""
   },
   {
     "index": 137,
@@ -1504,7 +1640,8 @@
     "safety_doc": "# Safety\n\nThe safety preconditions are same as those of [`AtomicUsize::from_ptr`].",
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 601,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L601"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L601",
+    "tags": ""
   },
   {
     "index": 138,
@@ -1515,7 +1652,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 405,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L405"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L405",
+    "tags": ""
   },
   {
     "index": 139,
@@ -1526,7 +1664,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 458,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L458"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L458",
+    "tags": ""
   },
   {
     "index": 140,
@@ -1537,7 +1676,8 @@
     "safety_doc": "# Safety\n\nThe implementor must ensure that `item_raw_info`, `item_into_raw`,\n`item_from_raw`, and `item_ref_from_raw` are implemented correctly so that:\n- `item_into_raw` is not overridden;\n- `item_raw_info` returns the exact same values as if called with\n`item_into_raw`;\n- if the provided raw form matches the item that was consumed by\n`item_into_raw`, `item_from_raw` restores the exact item that was\nconsumed by `item_into_raw`;\n- `item_ref_from_raw`, if called with the same argument, returns the same\nvalue.",
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 70,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L70"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L70",
+    "tags": ""
   },
   {
     "index": 141,
@@ -1548,7 +1688,8 @@
     "safety_doc": "# Safety\n\nAn implementor must ensure that:\n- the methods `as_usize` and `from_usize` are not overridden;\n- the return value of `from_repr`, when called with `repr`, should return\nthe same [`PteScalar`] that is passed to `from_repr`, if the level\npassed to `repr` is the same as that passed to `from_repr`;\n- a zeroed PTE represents an absent entry.",
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 555,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L555"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L555",
+    "tags": ""
   },
   {
     "index": 142,
@@ -1559,7 +1700,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that:\n- the physical address and the paging level represent a page table\nitem or part of it (as described above);\n- either the ownership of the item is properly transferred to the\nreturn value;\n- the [`super::PrivilegedPageFlags::AVAIL1`] flag is preserved, i.e.,\nit is the same as that returned from\n[`PageTableConfig::item_into_raw`].",
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 146,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L146"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L146",
+    "tags": ""
   },
   {
     "index": 143,
@@ -1570,7 +1712,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that:\n- the physical address and the paging level represent a page table\nitem or part of it (see also [`PageTableConfig::item_from_raw`]);\n- the returned reference `'a` does not outlive the original item;\n- the [`super::PrivilegedPageFlags::AVAIL1`] flag is preserved, as\ndescribed in [`PageTableConfig::item_from_raw`].",
     "source_path": "ostd/src/mm/page_table/mod.rs",
     "source_line": 159,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L159"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/mod.rs#L159",
+    "tags": ""
   },
   {
     "index": 144,
@@ -1581,7 +1724,8 @@
     "safety_doc": "# Safety\n\nThe caller should ensure that:\n- another legitimate page table is activated on this CPU;\n- this function should be called only once per CPU;\n- no [`with_borrow`] calls are performed on this CPU after this dismissal;",
     "source_path": "ostd/src/mm/page_table/boot_pt.rs",
     "source_line": 73,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/boot_pt.rs#L73"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/boot_pt.rs#L73",
+    "tags": "CallOnce"
   },
   {
     "index": 145,
@@ -1592,7 +1736,8 @@
     "safety_doc": "# Safety\n\nThis function is unsafe because it can cause undefined behavior if the caller\nmaps a page in the kernel address space.",
     "source_path": "ostd/src/mm/page_table/boot_pt.rs",
     "source_line": 164,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/boot_pt.rs#L164"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/boot_pt.rs#L164",
+    "tags": ""
   },
   {
     "index": 146,
@@ -1603,7 +1748,8 @@
     "safety_doc": "# Safety\n\nThis function is unsafe because it can cause undefined behavior if the caller\nmaps a page in the kernel address space.",
     "source_path": "ostd/src/mm/page_table/boot_pt.rs",
     "source_line": 217,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/boot_pt.rs#L217"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/boot_pt.rs#L217",
+    "tags": ""
   },
   {
     "index": 147,
@@ -1614,7 +1760,8 @@
     "safety_doc": "# Safety\n\nThe caller should ensure that\n- the range being mapped does not affect kernel's memory safety;\n- the physical address to be mapped is valid and safe to use.",
     "source_path": "ostd/src/mm/page_table/cursor/mod.rs",
     "source_line": 422,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/mod.rs#L422"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/mod.rs#L422",
+    "tags": ""
   },
   {
     "index": 148,
@@ -1625,7 +1772,8 @@
     "safety_doc": "# Safety\n\nThe caller should ensure that:\n- the range being protected with the operation does not affect\nkernel's memory safety;\n- the privileged flag `AVAIL1` should not be altered, since this flag\nis reserved for all page tables.",
     "source_path": "ostd/src/mm/page_table/cursor/mod.rs",
     "source_line": 544,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/mod.rs#L544"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/mod.rs#L544",
+    "tags": ""
   },
   {
     "index": 149,
@@ -1636,7 +1784,8 @@
     "safety_doc": "# Safety\n\nThe caller should ensure that:\n- the range being unmapped does not affect kernel's memory safety;\n- there is no memory access to the unmapped range after dropping the\nitems in `PageTableFrag` but before flushing TLB entries that cache\nthe mappings.",
     "source_path": "ostd/src/mm/page_table/cursor/mod.rs",
     "source_line": 508,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/mod.rs#L508"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/mod.rs#L508",
+    "tags": ""
   },
   {
     "index": 150,
@@ -1647,7 +1796,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that all the nodes in the sub-tree are locked\nand all guards are forgotten.\n\nThis function must not be called upon a shared node, e.g., the second-\ntop level nodes that the kernel space and user space share.",
     "source_path": "ostd/src/mm/page_table/cursor/locking.rs",
     "source_line": 257,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/locking.rs#L257"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/cursor/locking.rs#L257",
+    "tags": ""
   },
   {
     "index": 151,
@@ -1658,7 +1808,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the page table to be activated has\nproper mappings for the kernel and has the correct const parameters\nmatching the current CPU.",
     "source_path": "ostd/src/mm/page_table/node/mod.rs",
     "source_line": 94,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L94"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L94",
+    "tags": "RefTransfer"
   },
   {
     "index": 152,
@@ -1669,7 +1820,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/mm/page_table/node/mod.rs",
     "source_line": 119,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L119"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L119",
+    "tags": ""
   },
   {
     "index": 153,
@@ -1680,7 +1832,8 @@
     "safety_doc": "# Safety\n\nThis function must be called if this task logically holds the lock.\n\nCalling this function when a guard is already created is undefined behavior\nunless that guard was already forgotten.",
     "source_path": "ostd/src/mm/page_table/node/mod.rs",
     "source_line": 160,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L160"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L160",
+    "tags": "LockHold"
   },
   {
     "index": 154,
@@ -1691,7 +1844,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the index is within the bound.",
     "source_path": "ostd/src/mm/page_table/node/mod.rs",
     "source_line": 211,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L211"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L211",
+    "tags": "InBound, RefTransfer"
   },
   {
     "index": 155,
@@ -1702,7 +1856,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that:\n1. The index must be within the bound;\n2. The PTE must represent a [`PteState`] in the same [`PageTableConfig`]\nand at the right paging level (`self.level() - 1`).\n3. The page table node will have the ownership of the [`PteState`]\nafter this method.",
     "source_path": "ostd/src/mm/page_table/node/mod.rs",
     "source_line": 232,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L232"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/mod.rs#L232",
+    "tags": "InBound"
   },
   {
     "index": 156,
@@ -1713,7 +1868,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the index is within the bounds of the node.",
     "source_path": "ostd/src/mm/page_table/node/entry.rs",
     "source_line": 211,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/entry.rs#L211"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/entry.rs#L211",
+    "tags": "InBound"
   },
   {
     "index": 157,
@@ -1724,7 +1880,8 @@
     "safety_doc": "# Safety\n\nThe provided PTE must be the output of [`Self::into_pte`], and the PTE:\n- must not be used to created a [`PteState`] twice;\n- must not be referenced by a living [`PteStateRef`].\n\nThe level must match the original level of the child.",
     "source_path": "ostd/src/mm/page_table/node/pte_state.rs",
     "source_line": 64,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/pte_state.rs#L64"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/pte_state.rs#L64",
+    "tags": ""
   },
   {
     "index": 158,
@@ -1735,7 +1892,8 @@
     "safety_doc": "# Safety\n\nThe PTE must be the output of a [`PteState::into_pte`], where the child\noutlives the reference created by this function.\n\nThe provided level must be the same with the level of the page table\nnode that contains this PTE.",
     "source_path": "ostd/src/mm/page_table/node/pte_state.rs",
     "source_line": 105,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/pte_state.rs#L105"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/mm/page_table/node/pte_state.rs#L105",
+    "tags": ""
   },
   {
     "index": 159,
@@ -1746,7 +1904,8 @@
     "safety_doc": "# Safety\n\nThis function must be called from an IRQ handler that can be triggered by\ninter-processor interrupts.",
     "source_path": "ostd/src/smp.rs",
     "source_line": 92,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/smp.rs#L92"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/smp.rs#L92",
+    "tags": ""
   },
   {
     "index": 160,
@@ -1757,7 +1916,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that this CPU is not executing in a RCU read-side\ncritical section.",
     "source_path": "ostd/src/sync/rcu/mod.rs",
     "source_line": 534,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/mod.rs#L534"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/mod.rs#L534",
+    "tags": ""
   },
   {
     "index": 161,
@@ -1768,7 +1928,8 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the returned value will be dropped after\nall the threads cannot access it anymore. Specifically, dropping it\nafter the RCU grace period is guaranteed to be safe.\n\nNote that panic unwinding may cause the returned value to be dropped\nimmediately, which is not sound. Therefore, the caller must forget the\n[`PanicGuard`] after it ensures that the value will be dropped at the\ncorrect time.",
     "source_path": "ostd/src/sync/rcu/mod.rs",
     "source_line": 496,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/mod.rs#L496"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/mod.rs#L496",
+    "tags": ""
   },
   {
     "index": 162,
@@ -1779,7 +1940,8 @@
     "safety_doc": "",
     "source_path": "ostd/src/sync/rcu/monitor.rs",
     "source_line": 32,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/monitor.rs#L32"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/monitor.rs#L32",
+    "tags": ""
   },
   {
     "index": 163,
@@ -1790,7 +1952,8 @@
     "safety_doc": "# Safety\n\nThis trait must be implemented correctly (according to the doc comments for\neach method). Types like [`Rcu`] rely on this assumption to safely use the\nraw pointers.\n\n[`Rcu`]: super::Rcu",
     "source_path": "ostd/src/sync/rcu/non_null/mod.rs",
     "source_line": 25,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/non_null/mod.rs#L25"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/non_null/mod.rs#L25",
+    "tags": "NonNull"
   },
   {
     "index": 164,
@@ -1801,7 +1964,8 @@
     "safety_doc": "# Safety\n\n1. The raw pointer must have been previously returned by a call to\n`into_raw`.\n2. The raw pointer must not be used after calling `from_raw`.\n\nNote that the second point is a hard requirement: Even if the\nresulting value has not (yet) been dropped, the pointer cannot be\nused because it may break Rust aliasing rules (e.g., `Box<T>`\nrequires the pointer to be unique and thus _never_ aliased).",
     "source_path": "ostd/src/sync/rcu/non_null/mod.rs",
     "source_line": 60,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/non_null/mod.rs#L60"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/non_null/mod.rs#L60",
+    "tags": "NonAccessable, OriginateFrom"
   },
   {
     "index": 165,
@@ -1812,7 +1976,8 @@
     "safety_doc": "# Safety\n\nThe original pointer must outlive the lifetime parameter `'a`, and during `'a`\nno mutable references to the pointer will exist.",
     "source_path": "ostd/src/sync/rcu/non_null/mod.rs",
     "source_line": 68,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/non_null/mod.rs#L68"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/sync/rcu/non_null/mod.rs#L68",
+    "tags": "Alive, NonMutRef"
   },
   {
     "index": 166,
@@ -1823,7 +1988,8 @@
     "safety_doc": "# Safety\n\nThe implementer must ensure that the atomic mode is maintained while\nthe guard type is alive.",
     "source_path": "ostd/src/task/atomic_mode.rs",
     "source_line": 63,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/task/atomic_mode.rs#L63"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/task/atomic_mode.rs#L63",
+    "tags": ""
   },
   {
     "index": 167,
@@ -1834,7 +2000,8 @@
     "safety_doc": "# Safety\n\nThis function must be called only once after switching to a task.",
     "source_path": "ostd/src/task/processor.rs",
     "source_line": 119,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/task/processor.rs#L119"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/task/processor.rs#L119",
+    "tags": "CallOnce"
   },
   {
     "index": 168,
@@ -1845,7 +2012,8 @@
     "safety_doc": "# Safety\n\nIf the data type is not [`Sync`], the caller must ensure that the data is not accessed\nconcurrently.",
     "source_path": "ostd/src/task/utils.rs",
     "source_line": 30,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/task/utils.rs#L30"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/task/utils.rs#L30",
+    "tags": ""
   },
   {
     "index": 169,
@@ -1856,7 +2024,8 @@
     "safety_doc": "# Safety\n\nThere must be a 1:1 mapping between this ID type and\nthe integers from 0 to `Self::cardinality()` (exclusive).\nThis implies that the implementation must ensure that\nif one invokes `Into::<u32>::into()` for an `Id` value,\nthen the returned integer always falls within `0..Id::cardinality()`.\nFurthermore, the implementation must ensure that\nfor any `id_value` of type `MyId: Id`,\nthe following assertion always succeed\n\n```rust\nassert!(id_value == MyId::new(id_value.into()));\n```\n\nThere are also constraints on the implementation of `self::cardinality`.\nFor one thing, the cardinality of the ID type must not change, i.e.,\ndifferent calls to `self::cardinality` return the same value.\nIn addition, the value of a cardinality must be greater than zero.",
     "source_path": "ostd/src/util/id_set.rs",
     "source_line": 55,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/util/id_set.rs#L55"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/util/id_set.rs#L55",
+    "tags": "ValidNum, NonZero"
   },
   {
     "index": 170,
@@ -1867,7 +2036,8 @@
     "safety_doc": "# Safety\n\nThe given number must be less than `Self::cardinality()`.",
     "source_path": "ostd/src/util/id_set.rs",
     "source_line": 73,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/util/id_set.rs#L73"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/src/util/id_set.rs#L73",
+    "tags": ""
   },
   {
     "index": 171,
@@ -1878,6 +2048,7 @@
     "safety_doc": "# Safety\n\nThe caller must ensure that the E820 entries in the boot parameters correctly represent the\ncurrent memory map.",
     "source_path": "ostd/libs/linux-bzimage/setup/src/x86/legacy_i386/alloc.rs",
     "source_line": 20,
-    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/libs/linux-bzimage/setup/src/x86/legacy_i386/alloc.rs#L20"
+    "api_link": "https://github.com/asterinas/asterinas/blob/main/ostd/libs/linux-bzimage/setup/src/x86/legacy_i386/alloc.rs#L20",
+    "tags": ""
   }
 ]
