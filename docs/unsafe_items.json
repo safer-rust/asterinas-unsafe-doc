@@ -9,7 +9,7 @@
     "tags": "CurThread",
     "source_path": "ostd/src/cpu/id.rs",
     "source_line": 126,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/cpu/id.rs#L126"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/cpu/id.rs#L126"
   },
   {
     "index": 2,
@@ -21,7 +21,7 @@
     "tags": "CurThread",
     "source_path": "ostd/src/cpu/local/mod.rs",
     "source_line": 85,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/cpu/local/mod.rs#L85"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/cpu/local/mod.rs#L85"
   },
   {
     "index": 3,
@@ -33,7 +33,7 @@
     "tags": "InBound, ValidRead",
     "source_path": "ostd/src/mm/frame/meta.rs",
     "source_line": 149,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/mm/frame/meta.rs#L149"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/mm/frame/meta.rs#L149"
   },
   {
     "index": 4,
@@ -45,7 +45,7 @@
     "tags": "",
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 393,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/mm/io/mod.rs#L393"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/mm/io/mod.rs#L393"
   },
   {
     "index": 5,
@@ -57,7 +57,7 @@
     "tags": "",
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 664,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/mm/io/mod.rs#L664"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/mm/io/mod.rs#L664"
   },
   {
     "index": 6,
@@ -69,7 +69,7 @@
     "tags": "UserSpace",
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 498,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/mm/io/mod.rs#L498"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/mm/io/mod.rs#L498"
   },
   {
     "index": 7,
@@ -81,7 +81,7 @@
     "tags": "Assoc, UserSpace",
     "source_path": "ostd/src/mm/io/mod.rs",
     "source_line": 776,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/mm/io/mod.rs#L776"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/mm/io/mod.rs#L776"
   },
   {
     "index": 8,
@@ -93,7 +93,7 @@
     "tags": "NonNull",
     "source_path": "ostd/src/sync/rcu/non_null/mod.rs",
     "source_line": 25,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/sync/rcu/non_null/mod.rs#L25"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/sync/rcu/non_null/mod.rs#L25"
   },
   {
     "index": 9,
@@ -105,7 +105,7 @@
     "tags": "Alias, NonAccessable, OriginateFrom, Forgotten",
     "source_path": "ostd/src/sync/rcu/non_null/mod.rs",
     "source_line": 60,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/sync/rcu/non_null/mod.rs#L60"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/sync/rcu/non_null/mod.rs#L60"
   },
   {
     "index": 10,
@@ -117,7 +117,7 @@
     "tags": "Alive, NonMutRef",
     "source_path": "ostd/src/sync/rcu/non_null/mod.rs",
     "source_line": 68,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/sync/rcu/non_null/mod.rs#L68"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/sync/rcu/non_null/mod.rs#L68"
   },
   {
     "index": 11,
@@ -129,7 +129,7 @@
     "tags": "",
     "source_path": "ostd/src/task/atomic_mode.rs",
     "source_line": 63,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/task/atomic_mode.rs#L63"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/task/atomic_mode.rs#L63"
   },
   {
     "index": 12,
@@ -141,7 +141,7 @@
     "tags": "ValidNum, NonZero",
     "source_path": "ostd/src/util/id_set.rs",
     "source_line": 55,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/util/id_set.rs#L55"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/util/id_set.rs#L55"
   },
   {
     "index": 13,
@@ -153,6 +153,6 @@
     "tags": "ValidNum",
     "source_path": "ostd/src/util/id_set.rs",
     "source_line": 73,
-    "api_link": "https://github.com/asterinas/asterinas/blob/633a9ac326e0f5358ed911490e95dea8a7efadd7/ostd/src/util/id_set.rs#L73"
+    "api_link": "https://github.com/asterinas/asterinas/blob/e01871f0c9fd73052a77cc3009c5d608861cff25/ostd/src/util/id_set.rs#L73"
   }
 ]
